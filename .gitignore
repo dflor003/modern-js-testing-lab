@@ -1,2 +1,10 @@
+# Node stuff
 node_modules
 npm-debug.log
+
+# Lab state JSON
+.lab-state
+
+# IDE stuff
+.idea
+.vs

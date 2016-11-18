@@ -4,7 +4,10 @@
   "description": "A lab on testing javascript.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "lab:start": "",
+    "lab:next": "export LAB_STEP=$()",
+    "test": "mocha",
+    "test:watch": "mocha -w"
   },
   "keywords": [
     "testing"
@@ -12,9 +15,14 @@
   "author": "Danil Flores <dflor003@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-preset-es2017": "^6.16.0",
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
-    "mocha": "^3.1.2"
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "lab-cli": "file:.lab-cli"
   }
 }
